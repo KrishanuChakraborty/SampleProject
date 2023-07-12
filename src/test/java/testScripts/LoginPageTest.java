@@ -11,6 +11,8 @@ public class LoginPageTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://google.com");
 		//driver.findElement(By.xpath("//id="APjFqb"))
+		//  "//input[@id='name']//following::input[2]" // following
+		// "//input[@id='name']//preceding::input[2]" // preceding
 	}
 
 }
