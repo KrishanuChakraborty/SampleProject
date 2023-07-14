@@ -15,6 +15,13 @@ public class AlertTest {
 		Alert alert = driver.switchTo().alert();
 		System.out.println(alert.getText());
 		alert.accept();
+		
+		driver.findElement(By.xpath("//button[@class='btn btn-default btn-lg']")).click();
+		Alert alert1 = driver.switchTo().alert();
+		System.out.println(alert1.getText());
+		alert1.dismiss();
+		
 	}
 
 }
+
